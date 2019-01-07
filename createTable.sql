@@ -1,0 +1,5 @@
+CREATE TABLE diccionary (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    word TEXT NOT NULL UNIQUE,
+    translation TEXT NOT NULL
+);
