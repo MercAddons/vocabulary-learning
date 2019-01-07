@@ -45,7 +45,7 @@ class VocabularyController:
         self.english = not self.english
         self.model.restartIds()
         self.showNewWord()
-        self.view.setResultString("Switched language")
+        self.view.setResultString("Language switched")
         
     def checkWords(self):
         word = self.view.getWordString() 
@@ -83,7 +83,7 @@ class VocabularyController:
         translation = self.view.getTranslationString()
         if translation != "" and word != "":
             self.model.createWord(word,translation)
-            self.view.setResultString("Added word %s - %s" % (word,translation))
+            self.view.setResultString("Word added %s - %s" % (word,translation))
             self.showNewWord()
         else:
             self.view.setResultString("The fields can\'t be empty")
